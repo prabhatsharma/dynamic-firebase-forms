@@ -16,12 +16,17 @@ app.service('firebaseAPI', function ($firebaseObject, $rootScope) {
         formNode.set(form)
     }
     
-    service.refresh = function (scope) {
-        forms.on('child_added', function getFirebaseData(data) {
-            scope.forms = data.val();
-            scope.$apply();    //This is pain javascript callback and outside angular scope. so run manual
-            console.log('Form list is : ', $scope.forms);
-        })
+    service.updateForm = function (formName, formTitle, newSchema, newForm) {
+        var formNode = forms.child(formName);
+        var form = {
+            id: formName,
+            title: formTitle,
+            schema: newSchema,
+            form: newForm
+        };
+        formNode.update(form)
     }
+    
+
     return service;
 })

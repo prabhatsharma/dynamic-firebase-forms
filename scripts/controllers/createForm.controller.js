@@ -9,8 +9,8 @@ app.controller('createFormController', function($scope, firebaseAPI, $firebaseOb
     
     $scope.createForm = function(formName, formTitle, newSchema, newForm) {
         console.log(formName + ", " + formTitle)
-        newSchema = newSchema.replace(/(?:\r\n|\r|\n)/g, '')
-        newForm = newForm.replace(/(?:\r\n|\r|\n)/g, '')
+        //newSchema = newSchema.replace(/(?:\r\n|\r|\n)/g, '')
+        //newForm = newForm.replace(/(?:\r\n|\r|\n)/g, '')
         firebaseAPI.createForm(formName, formTitle, newSchema, newForm)
     }
 })
