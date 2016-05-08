@@ -1,0 +1,32 @@
+<div ng-controller="adminController">
+    <h1>Admin page</h1>
+    <form id="adminForm" name="adminForm" >
+        <div class="row">
+            <div class="col-md-3"><label for="formName">Form Name</label></div>
+            <div class="col-md-5"><input class="form-control" id="formName"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"><label for="fieldName">Field Name</label></div>
+            <div class="col-md-5"><input class="form-control" id="fieldName"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"><label for="fieldType">Field Type</label></div>
+            <div class="col-md-5">
+                <div class="radio">
+                    <label><input type="radio" name="fieldType" value="text">Text</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="fieldType" value="radio">Radio</label>
+                </div>
+                <div class="radio disabled">
+                    <label><input type="radio" name="fieldType" value="checkbox">Checkbox</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-2"><input type="submit" class="btn btn-primary" > </div>
+            <div class="col-md-3"></div>
+        </div>
+    </form>
+</div>
