@@ -4,7 +4,7 @@ app.controller('adminFormController', function($scope, $stateParams) {
     console.log("Admin Form ", $stateParams)
     $scope.formName = $stateParams.formName
     
-    $scope.createForm = function(formName, formTitle) {
+    $scope.updateForm = function(formName, newSchema, newForm) {
         console.log(formName + ", " + formTitle)
     }
 })

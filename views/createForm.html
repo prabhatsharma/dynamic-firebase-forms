@@ -2,7 +2,7 @@
     <h3>Dynamic Form creator </h3>
     <div class="container-fluid">
         <div class="row">
-            <form ng-submit="createForm(newFormName, newFormTitle)">
+            <form ng-submit="createForm(newFormName, newFormTitle, newSchema, newForm)">
                 <div class="row">
                     <div class="col-md-3"><label for="field1">Form Name</label> </div>
                     <div class="col-md-8"><input type="text" id="formName" class="form-control" ng-model="newFormName"> </div>
@@ -18,11 +18,11 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <textarea id="formTitle" class="form-control" ng-model="newSchemaDefinition" rows="15" cols="200"> 
+                        <textarea id="formTitle" class="form-control" ng-model="newSchema" rows="15" cols="200"> 
                         </textarea>
                     </div>
                     <div class="col-md-6">
-                        <textarea id="formTitle" class="form-control" ng-model="newFormDefinition" rows="15" cols="200"> 
+                        <textarea id="formTitle" class="form-control" ng-model="newForm" rows="15" cols="200"> 
                         </textarea>
                     </div>
                 </div>

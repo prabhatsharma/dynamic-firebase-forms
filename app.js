@@ -1,6 +1,6 @@
 'use strict'
 
-var app = angular.module("app", ["ui.router", "schemaForm", "ui.bootstrap"])
+var app = angular.module("app", ["ui.router", "schemaForm", "ui.bootstrap", "firebase"])
 
 app.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/home")
