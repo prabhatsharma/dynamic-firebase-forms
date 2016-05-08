@@ -11,9 +11,11 @@ app.controller('adminFormController', function($scope, $stateParams, firebaseAPI
 	$scope.form.$loaded().then(function () {		
 		$scope.newSchema = $scope.form.schema;
 		$scope.newForm = $scope.form.form;
+        $scope.formTitle = $scope.form.title;
 	})
     
     $scope.updateForm = function(formName, formTitle, newSchema, newForm) {
         console.log(formName + ", " + formTitle)
+        firebaseAPI.updateForm(formName, formTitle, newSchema, newForm)
     }
 })
