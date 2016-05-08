@@ -1,0 +1,40 @@
+<div ng-controller="createFormController">
+    <h3>Dynamic Form creator </h3>
+    <div class="container-fluid">
+        <div class="row">
+            <form ng-submit="createForm(newFormName, newFormTitle)">
+                <div class="row">
+                    <div class="col-md-3"><label for="field1">Form Name</label> </div>
+                    <div class="col-md-8"><input type="text" id="formName" class="form-control" ng-model="newFormName"> </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"><label for="formTitle">Form Title</label> </div>
+                    <div class="col-md-8"><input type="text" id="formTitle" class="form-control" ng-model="newFormTitle"> </div>
+                </div>
+                <div class="row" style="height:20px;"></div>
+                <div class="row">
+                    <div class="col-md-6"><label for="formTitle">Form Definition - Schema</label> </div>
+                    <div class="col-md-6"><label for="formTitle">Form Definition - Form</label> </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <textarea id="formTitle" class="form-control" ng-model="newSchemaDefinition" rows="15" cols="200"> 
+                        </textarea>
+                    </div>
+                    <div class="col-md-6">
+                        <textarea id="formTitle" class="form-control" ng-model="newFormDefinition" rows="15" cols="200"> 
+                        </textarea>
+                    </div>
+                </div>
+                <div class="row" style="height:20px;"></div>
+                <div class="row">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-5">
+                        <button type="submit" class="form-control">Create Form</button>
+                    </div>
+                    
+            </form>
+            </div>
+        </div>
+    </div>

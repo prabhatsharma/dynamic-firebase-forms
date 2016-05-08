@@ -1,0 +1,29 @@
+<div ng-controller="adminFormController">
+    <h3>Dynamic Form creator </h3>
+    <div class="container-fluid">
+        <div class="row">
+            <form ng-submit="">
+                <div class="row">
+                    <div class="col-md-6"><label for="formTitle">Form Definition - Schema</label> </div>
+                    <div class="col-md-6"><label for="formTitle">Form Definition - Form</label> </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <textarea id="formTitle" class="form-control" ng-model="newSchemaDefinition" rows="15" cols="200"> 
+                        </textarea>
+                    </div>
+                    <div class="col-md-6">
+                        <textarea id="formTitle" class="form-control" ng-model="newFormDefinition" rows="15" cols="200"> 
+                        </textarea>
+                    </div>
+                </div>
+                <div class="row" style="height:20px;"></div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <button type="submit" class="form-control">Update Form Definition</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>

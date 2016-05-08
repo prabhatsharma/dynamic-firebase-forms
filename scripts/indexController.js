@@ -1,8 +1,7 @@
 'use strict';
 
-app.controller('indexController', function($scope) {
-    console.log("indexController");
-    var forms = new Firebase('https://schemaform.firebaseio.com/');
+app.controller('indexController', function($scope, firebaseAPI) {
+    var forms = new Firebase(firebaseAPI.baseUrl);
     
     $scope.forms = {}
     
@@ -13,8 +12,4 @@ app.controller('indexController', function($scope) {
         
         console.log('Form list is : ' , $scope.forms);
     })
-    
-    $scope.goTo = function(key) {
-        $state.go(key)
-    }
 })

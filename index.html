@@ -6,16 +6,9 @@
 </head>
 
 <body ng-controller="indexController">
-
-    <nav class="navbar navbar-default navbar-fixed-bottom">
-        <div class="container">
-            ...
-        </div>
-    </nav>
-
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-1">
                 <div ng-repeat="(key, value) in forms">
                     <a href="#" ui-sref="home.forms({formName : key})" class="link">
                         {{key}}
@@ -48,6 +41,9 @@
     <script src="/app.js"></script>
     <script src="/scripts/indexController.js"></script>
     <script src="/scripts/controllers/admin.controller.js"></script>
+    <script src="/scripts/controllers/adminForm.controller.js"></script>
+    <script src="/scripts/controllers/createForm.controller.js"></script>
+    <script src="/scripts/services/firebaseAPI.js"></script>
     <script src="/scripts/directives/dynamic-form/dynamicForm.controller.js"></script>
     <script src="/scripts/directives/dynamic-form/dynamicForm.directive.js"></script>
     <!-- endinject -->
