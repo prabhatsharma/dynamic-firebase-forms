@@ -9,7 +9,8 @@
     <div class="container-fluid">
         <div class="row">       
             <div class="col-md-1">
-                <a href="#" ui-sref="admin">Admin</a>
+                <a href="#" ui-sref="admin" class="btn btn-default">Admin</a>
+                <br><br><strong>Forms</strong>
                 <div ng-repeat="(key, value) in forms">
                     <a href="#" ui-sref="home.forms({formName : key})" class="link">
                         {{key}}
@@ -35,6 +36,7 @@
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="bower_components/firebase/firebase.js"></script>
     <script src="bower_components/angularfire/dist/angularfire.js"></script>
+    <script src="bower_components/toastr/toastr.js"></script>
     <!-- endbower -->
 
     <!-- inject:js -->

@@ -17,5 +17,9 @@ app.controller('adminFormController', function($scope, $stateParams, firebaseAPI
     $scope.updateForm = function(formName, formTitle, newSchema, newForm) {
         console.log(formName + ", " + formTitle)
         firebaseAPI.updateForm(formName, formTitle, newSchema, newForm)
+                
+        toastr.info("Form update Request sent asynchronously")
+        
+        console.log(toastr)
     }
 })

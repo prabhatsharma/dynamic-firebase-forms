@@ -1,9 +1,10 @@
 <div ng-controller="adminController">
-    <h1>Admin page</h1>
+    <h3>Admin page</h3>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-2">
-                <a href="#" ui-sref="admin.create">Create New Form</a>
+                <a href="#" ui-sref="admin.create" class="btn btn-default">Create New Form</a>
+                <br><br><strong>Existing Forms</strong>
                 <div ng-repeat="(key, value) in forms">
                     <a href="#" ui-sref="admin.forms({formName : key})" class="link">
                         {{key}}
